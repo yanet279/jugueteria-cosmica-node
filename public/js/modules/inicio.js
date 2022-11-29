@@ -46,7 +46,6 @@ class Inicio {
     }
 
     static addArticle(e){
-        console.log('bbbbbbbbbbb');
         e.preventDefault();
         if(e.target.classList.contains('card__link-buy')){
             const selectedArticle = e.target.parentElement.parentElement.parentElement;
