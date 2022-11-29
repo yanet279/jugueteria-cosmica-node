@@ -153,7 +153,7 @@ class Inicio {
         const hbsFile = await fetch('templates/inicio.hbs').then(r => r.text());
         const template = Handlebars.compile(hbsFile);
         const html = template({ products });
-        document.querySelector('.cards-container').innerHTML = html;
+        document.querySelector('.cards-container').innerHTML += html;
     }
 
 
